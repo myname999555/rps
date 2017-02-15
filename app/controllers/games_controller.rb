@@ -13,4 +13,19 @@ class GamesController < ApplicationController
     end
   end
 
+
+  def scissor
+    randomnumber=rand(1..3)
+    if randomnumber==1
+      @message2='Congratulations, You killed a paper'
+
+    elsif randomnumber==2
+      @message2='You got smashed with rock, and you lost'
+
+    else
+      @message2='You tied'
+    end
+
+  end
+
 end
